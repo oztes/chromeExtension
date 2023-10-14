@@ -14,7 +14,7 @@
       "service_worker": "background.js"
     },
     "action": {
-      "default_popup": "popup.html",
+      "default_popup": "index.html",
       "default_icon": "images/CAicon1.jpeg"
     },
     "content_scripts": [
