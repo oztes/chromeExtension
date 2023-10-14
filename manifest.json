@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Event Scanner",
+    "version": "1.0.0",
+    "description": "Scans webpages for events and allows adding them to Google Calendar.",
+    "author": "Ozan Teo Sarac",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "identity",
+      "https://www.googleapis.com/calendar/"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "images/CAicon1.jpeg"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  
